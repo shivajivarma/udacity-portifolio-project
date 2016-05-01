@@ -16,15 +16,7 @@ body{
     font-family: Lobster;
 }
 
-a {
-    cursor: url("/assets/img/hand.png"), pointer;
-}
-
 @media screen and (max-width: 767px) {
-    .logo-section {
-        display: flex;
-    }
-
     .logo-section .media-object{
         margin: auto;
     }
