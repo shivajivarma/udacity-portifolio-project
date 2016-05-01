@@ -1,7 +1,7 @@
 # udacity-portifolio-project
 
-Portifolio: https://shivajivarma.github.io/udacity-portifolio-project/src
-Compressed Portifolio: https://shivajivarma.github.io/udacity-portifolio-project/build
+Portifolio: https://shivajivarma.github.io/udacity-portifolio-project/src  
+Compressed Portifolio: https://shivajivarma.github.io/udacity-portifolio-project/build  
 
 ###Gulp task to compress all sources files
 1. Install NodeJS
