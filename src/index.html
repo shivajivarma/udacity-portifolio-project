@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Portfolio metadata -->
+    <title>My Portfolio</title>
+    <meta name="description"  property="og:description"
+          content="This is portfolio page. Contains details of all projects developed by Shivaji Varma,
+          as part of Udacity Full stack developer course.">
+    <meta name="keywords" content="design, creative, udacity project, portfolio">
+
+    <!-- Framework CSS files -->
+    <link href="assets/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/frameworks/animate/animate.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" media="screen">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+    <!--Page Content -->
+    <div class="container">
+        <!-- Header section -->
+        <header class="portfolio-header">
+            <div class="row">
+                <div class="logo-section col-md-4 col-sm-4 col-xs-12">
+                    <img class="media-object" src="assets/img/logo.svg"
+                         alt="Logo">
+                </div>
+
+                <div class="title-section col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-2 col-xs-12">
+                    <h1>Shivaji Varma P V</h1>
+                    <h2>
+                        <small>FRONT END DEVELOPER</small>
+                    </h2>
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner section -->
+        <div class="container-fluid wow fadeInUp">
+            <div class="row">
+                <img src="assets/img/banner.jpg" class="img-responsive" alt="main image">
+            </div>
+        </div>
+
+        <!--Featured works section -->
+        <section class="featured-works row">
+            <div class="sub-work col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+            <div class="project-card col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInRight"
+                 data-wow-duration="1000ms" data-wow-delay="300ms">
+                <img class="img-responsive" src="assets/img/pig.jpg" alt="Pig">
+                <h3>
+                    <a id="pigLabel" href="#" class="triggerModal" data-target="#pigModal">Pig</a>
+                    <small>(The Age Calculator)</small>
+                </h3>
+                <p>Age Calculator is a Hybrid mobile app developed using Cordova.
+                     Boostrap framework for UI development.</p>
+            </div>
+
+            <div class="project-card col-xs-12 col-sm-6 col-md-4 wow fadeInRight"
+                 data-wow-duration="1000ms" data-wow-delay="500ms">
+                <img class="img-responsive" src="assets/img/fox.jpg" alt="Image for my portfolio site">
+                <h3>
+                    <a id="foxLabel" class="triggerModal" data-target="#foxModal">Fox</a>
+                    <small>(Bus Reservation System)</small>
+                </h3>
+                <p>Open Source Product, which helps travel companies to automate there processes.</p>
+            </div>
+
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="project-card col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="700ms">
+                <img class="img-responsive" src="assets/img/crane.jpg" alt="writers block blog Image">
+                <h3>
+                    <a id="craneLabel" class="triggerModal" data-target="#craneModal">Crane</a>
+                    <small>(The Tech Blog)</small>
+                </h3>
+                <p>Blog displaying the tech work of a developer.</p>
+            </div>
+
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+
+            <div class="project-card col-xs-12 col-sm-6 col-md-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <img class="img-responsive" src="assets/img/camel.jpg" alt="my next project image">
+                <h3>
+                    <a id="camelLabel" class="triggerModal" data-target="#camelModal">Camel</a>
+                    <small>(The Camel and Jackal Story)</small>
+                </h3>
+                <p>Camel and jackal were friends. And something happened...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- FOOTER -->
+        <footer class="portfolio-footer">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Shivaji Varma</p>
+        </footer>
+
+    </div>
+    <!-- Modal windows -->
+    <div class="modal fade" id="pigModal" tabindex="-1" role="dialog" aria-labelledby="pigLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Pig <small>The Age Calculator</small></h4>
+                </div>
+                <div class="modal-body">
+                    <p>Age Calculator is a Hybrid mobile app developed using <a href="https://cordova.apache.org" title="Cordova">Cordova</a>. <a href="https://getbootstrap.com" title="Bootstrap">Boostrap</a> framework for UI development.</p>
+                    <a href="https://play.google.com/store/apps/details?id=codemons.age_calculator" target="_blank" class="btn btn-danger">Play Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=codemons.age_calculator" target="_blank" class="btn btn-primary"><i class="fa fa-github"></i></a>
+
+                    <h5>Version</h5>
+                    <p><b>1.6.0</b></p>
+
+                    <h5>Dev Setup</h5>
+                    <pre><code>$ npm install -g cordova</code></pre>
+                    <pre><code>$ git clone https://github.com/codemons/age-calculator-cordova.git
+$ cd age-calculator
+$ cordova platform add [android/ios/windows]</code></pre>
+
+                    <p>Install platform respective SDK. And then give build.</p>
+                    <pre><code>$ cordova build</code></pre>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" href="https://github.com/codemons/age-calculator-cordova" target="_blank">Go To Page</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="foxModal" tabindex="-1" role="dialog" aria-labelledby="foxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Fox <small>Bus Reservation System</small></h4>
+                </div>
+                <div class="modal-body">
+                    <p>Traveling is a large growing business across all countries.
+                        Bus reservation system deals with maintenance of records of details of each passenger.
+                        It also includes maintenance of information like schedule and details of each bus.</p>
+                    <p>We observed the working of the Bus reservation system and after going through it,
+                        we get to know that there are many operations, which they have to do manually.
+                        It takes a lot of time and causing many errors while data entry. Due to this,
+                        sometimes a lot of problems occur and they were facing many disputes with customers.
+                        To solve the above problem, and further maintaining records of passenger details,
+                        seat availability, price per seat, bill generation and other things,
+                        we are offering this proposal of computerized reservation system.</p>
+                    <p>By using this software, we can reserve tickets from any part of the world,
+                        through telephone lines, via internet. Customer can check availability of bus and
+                        reserve selective seats. The project provides and checks all sorts of constraints
+                        so that user does give only useful data and thus validation is done in an effective way.</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" href="https://github.com/codemons/age-calculator-cordova" target="_blank">Go To Page</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="craneModal" tabindex="-1" role="dialog" aria-labelledby="craneLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Crane <small>The Tech Blog</small></h4>
+                </div>
+                <div class="modal-body">
+                    Codemons team of developers comes up with several ideas to test and experiment.
+                    These projects get prototyped through in-house design and technology, and are made open to public.
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" href="http://codemons.com" target="_blank">Go To Page</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="camelModal" tabindex="-1" role="dialog" aria-labelledby="camelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Camel <small>The story of a camel</small></h4>
+                </div>
+                <div class="modal-body">
+                    <iframe class="soundcloud" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80882645&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" href="https://github.com/codemons/age-calculator-cordova" target="_blank">Go To Page</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Framework JS files -->
+    <script src="assets/frameworks/jquery.js" type="application/javascript"></script>
+    <script src="assets/frameworks/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="assets/frameworks/wow/wow.min.js" type="application/javascript"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

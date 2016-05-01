@@ -1,0 +1,1 @@
+!function(t){t(function(){var n=new WOW;n.init(),t(".triggerModal").on("click",function(n){n.preventDefault();var a=t(this).attr("data-target");t(a).modal("show")})})}(jQuery);
